@@ -13,8 +13,7 @@ function bash_settings
 		. /usr/local/etc/bash_completion
 	fi
 }
-
-function system_command_aliases 
+	function system_command_aliases 
 {
 	alias ls='ls -G'
 	alias mkdir='mkdir -p'
@@ -39,7 +38,9 @@ function load_rvm
 	[[ -s "/Users/akshayrawat/.rvm/scripts/rvm" ]] && source "/Users/akshayrawat/.rvm/scripts/rvm"
 }
 
+
+load_rvm
+[ -z "$PS1" ] && return
 bash_settings
 system_command_aliases
 package_aliases
-load_rvm

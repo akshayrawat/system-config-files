@@ -37,3 +37,14 @@ end
 def show(obj)
   y(obj.send("column_names"))
 end
+
+class Object
+   def local_methods
+    (methods - Object.instance_methods).sort
+  end
+end
+
+def pbcopy(string)
+  `echo "#{string}" | pbcopy`
+  string
+end

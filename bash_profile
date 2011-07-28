@@ -27,9 +27,8 @@ function package_aliases
 	alias mysqlstart="mysqld --skip-grant &disown"
 	alias mysqlc="mysql -uroot -pruebe"
 	alias be="bundle exec"
-	alias gst='git status'
-	alias grh='git reset --hard'
-	alias mdiff='git diff | mate'
+	alias mdiff= "git di | mate"
+	alias mdiffc= "git dic | mate"
 }
 
 

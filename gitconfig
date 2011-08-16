@@ -20,5 +20,9 @@
   out = log origin..HEAD
   qpl = log --pretty=\"%Cblue%h%Creset %Cgreen[%cr]%Creset %s\" origin/production..origin/master
 [user]
-name = Akshay Rawat
-email = projects@akshay.cc
+  name = Akshay Rawat
+  email = projects@akshay.cc
+[branch "master"]
+    mergeoptions = --no-ff
+[branch "develop"]
+    mergeoptions = --no-ff

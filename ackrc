@@ -3,3 +3,4 @@
 --type-add=prawn=.prawn
 --type-add=feature=.feature
 --type-add=coffee=.coffee
+--type-add=coffee=.scss

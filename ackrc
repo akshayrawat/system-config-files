@@ -1,6 +1,6 @@
 --type-add=ruby=.haml
 --type-add=css=.sass
---type-add=prawn=.prawn
---type-add=feature=.feature
---type-add=coffee=.coffee
---type-add=coffee=.scss
+--type-add=ruby=.prawn
+--type-add=ruby=.feature
+--type-add=ruby=.coffee
+--type-add=css=.scss

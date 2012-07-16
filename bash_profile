@@ -1,42 +1,39 @@
 function bash_settings
 {
-  if [ -f /usr/local/etc/bash_completion ]; then
-		. /usr/local/etc/bash_completion
-	fi
-
+  . `brew --prefix`/etc/bash_completion
   export PATH=$HOME/.rbenv/bin:/usr/local/bin:$PATH
   export PS1='\w$ '
   export PS1='\w$(__git_ps1 "(%s)")$ '
-	export EDITOR="mate"
-	export HISTSIZE=1000
-	export HISTFILESIZE=1000
-	export HISTCONTROL=ignoredups
-	export GIT_PS1_SHOWUNTRACKEDFILES=true
-	export GIT_PS1_SHOWDIRTYSTATE=true	
-	export GIT_PS1_SHOWUPSTREAM=true
+  export EDITOR="mate"
+  export HISTSIZE=1000
+  export HISTFILESIZE=1000
+  export HISTCONTROL=ignoredups
+  export GIT_PS1_SHOWUNTRACKEDFILES=true
+  export GIT_PS1_SHOWDIRTYSTATE=true	
+  export GIT_PS1_SHOWUPSTREAM=true
 }
-	function system_command_aliases 
+function system_command_aliases 
 {
-	alias ls='ls -G'
-	alias mkdir='mkdir -p'
-	alias df='df -h'
-	alias du='du -h -c'
-	alias ln='ln -s'
-        alias rf='rm -rf'
+  alias ls='ls -G'
+  alias mkdir='mkdir -p'
+  alias df='df -h'
+  alias du='du -h -c'
+  alias ln='ln -s'
+  alias rf='rm -rf'
 }
 
 function package_aliases
 {
-	alias mysql_start="mysqld --skip-grant &disown"
-	alias mysqlc="mysql -uroot -pruebe"
-	alias mongo_start="sudo rm /data/db/mongod.lock && nohup mongod >/dev/null 2>1 &"
-	alias pg_start="pg_ctl -D /usr/local/var/postgres -l /usr/local/var/postgres/server.log start"
-	alias redis_start="nohup redis-server /usr/local/etc/redis.conf >/dev/null 2>1 &"
-	alias be="bundle exec"
-	alias g="git"
-	alias gdi="git di"
-	alias mdiff="git di | mate"
-	alias dim="sips -g pixelWidth -g pixelHeight"
+  alias mysql_start="mysqld --skip-grant &disown"
+  alias mysqlc="mysql -uroot -pruebe"
+  alias mongo_start="sudo rm /data/db/mongod.lock && nohup mongod >/dev/null 2>1 &"
+  alias pg_start="pg_ctl -D /usr/local/var/postgres -l /usr/local/var/postgres/server.log start"
+  alias redis_start="nohup redis-server /usr/local/etc/redis.conf >/dev/null 2>1 &"
+  alias be="bundle exec"
+  alias g="git"
+  alias gdi="git di"
+  alias mdiff="git di | mate"
+  alias dim="sips -g pixelWidth -g pixelHeight"
   alias e="subl -n ."
 }
 

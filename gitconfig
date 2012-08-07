@@ -9,16 +9,19 @@
 [format]
   pretty = %Cblue%h%Creset %Cgreen[%ar]%Creset (%an) %s
 [alias]
-  c = commit -m
-  a = add
+  ci = commit -m
+  st = status
   di = diff
   dic = diff --cached
+  rh = reset --hard
+  co = checkout
+  br = branch
   pl = pull
   ps = push
   plre = pull --rebase
-  st = status
   out = log origin..HEAD
-  qpl = log --pretty=\"%Cblue%h%Creset %Cgreen[%cr]%Creset %s\" origin/production..origin/master
+  ci = commit
+  lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
 [user]
   name = Akshay Rawat
   email = projects@akshay.cc

@@ -1,0 +1,2 @@
+color desert
+nmap ,n :NERDTreeFind<CR>

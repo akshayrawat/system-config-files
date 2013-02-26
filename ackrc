@@ -1,6 +1,9 @@
---type-add=ruby=.haml
---type-add=css=.sass
---type-add=ruby=.prawn
---type-add=ruby=.feature
 --type-add=ruby=.coffee
---type-add=css=.scss
+
+--ignore-dir=log
+--ignore-dir=tmp
+--ignore-dir=db/*
+--ignore-dir=doc/*
+--ignore-dir=coverage
+
+-a

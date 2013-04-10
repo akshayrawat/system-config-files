@@ -20,6 +20,7 @@ function system_command_aliases
   alias du='du -h -c'
   alias ln='ln -s'
   alias rf='rm -rf'
+  alias sniff_lo='sudo tcpdump -i lo0 -A'
 }
 
 function package_aliases

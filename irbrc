@@ -1,17 +1,3 @@
-%w(rubygems wirble hirb awesome_print).each do |gem|
-  begin
-    require gem
-  rescue LoadError => err
-    warn "Please install #{gem}"
-  end
-end
-
-
-Wirble.init
-Wirble.colorize
-
-Hirb::View.enable
-
 IRB.conf[:AUTO_INDENT] = true
 
 if ENV.include?('RAILS_ENV')

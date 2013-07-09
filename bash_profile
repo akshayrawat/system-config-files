@@ -33,7 +33,7 @@ function package_aliases
   alias be="bundle exec"
   alias g="git"
   alias gdi="git di"
-  alias git_cleanup="git branch --merged | grep -v \* | xargs git branch -D"
+  alias git_cleanup="git branch --merged | grep -v 'master\|develop' | xargs git branch -D"
   alias git=hub
   alias mdiff="git di | mate"
   alias dim="sips -g pixelWidth -g pixelHeight"

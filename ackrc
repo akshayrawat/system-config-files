@@ -5,5 +5,3 @@
 --ignore-dir=db/*
 --ignore-dir=doc/*
 --ignore-dir=coverage
-
--a

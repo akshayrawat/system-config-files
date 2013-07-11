@@ -1,4 +1,4 @@
 color molokai
 set guioptions+=LlRrb
 set guioptions-=LlRrb
-command W w
+set guifont=Monaco:h16

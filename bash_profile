@@ -4,7 +4,7 @@ function bash_settings
   export PATH=$HOME/.rbenv/bin:/usr/local/bin:/usr/local/share/npm/bin/:$PATH
   export PS1='\w$ '
   export PS1='\w$(__git_ps1 "(%s)")$ '
-  export EDITOR="mate"
+  export EDITOR="vim"
   export HISTSIZE=1000
   export HISTFILESIZE=1000
   export HISTCONTROL=ignoredups
@@ -44,6 +44,16 @@ function gca
 {
   git add -A .
   git commit -m "$@"
+}
+
+function pr_develop
+{
+	hub pull-request -f '$@' -b develop | open
+}
+
+function pr_master
+{
+	hub pull-request -f '$@' -b master | open
 }
 
 [ -z "$PS1" ] && return

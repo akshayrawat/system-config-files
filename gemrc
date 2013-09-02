@@ -6,9 +6,7 @@
 :verbose: true
 :bulk_threshold: 1000
 :sources: 
-- http://gemcutter.org
-- http://gems.rubyforge.org/
-- http://gems.github.com
+- https://rubygems.org
 gem: --no-ri --no-rdoc
 :benchmark: false
 :update_sources: true

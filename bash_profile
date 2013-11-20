@@ -27,9 +27,9 @@ function package_aliases
 {
   alias mysql_start="mysqld --skip-grant &disown"
   alias mysqlc="mysql -uroot -pruebe"
-  alias mongo_start="sudo rm /data/db/mongod.lock && nohup mongod >/dev/null 2>1 &"
+  alias mongo_start="sudo rm /data/db/mongod.lock && nohup mongod >/dev/null 2>&1"
   alias pg_start="pg_ctl -D /usr/local/var/postgres -l /usr/local/var/postgres/server.log start"
-  alias redis_start="nohup redis-server /usr/local/etc/redis.conf >/dev/null 2>1 &"
+  alias redis_start="nohup redis-server /usr/local/etc/redis.conf >/dev/null 2>&1"
   alias be="bundle exec"
   alias g="git"
   alias gdi="git di"

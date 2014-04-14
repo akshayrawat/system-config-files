@@ -9,10 +9,10 @@ function bash_settings
   export HISTFILESIZE=1000
   export HISTCONTROL=ignoredups
   export GIT_PS1_SHOWUNTRACKEDFILES=true
-  export GIT_PS1_SHOWDIRTYSTATE=true	
+  export GIT_PS1_SHOWDIRTYSTATE=true
   export GIT_PS1_SHOWUPSTREAM=true
 }
-function system_command_aliases 
+function system_command_aliases
 {
   alias ls='ls -G'
   alias mkdir='mkdir -p'
@@ -33,8 +33,9 @@ function package_aliases
   alias be="bundle exec"
   alias g="git"
   alias gdi="git di"
+  alias glog="git log --all --graph --decorate --oneline --abbrev-commit"
   alias git_cleanup="git branch | grep -v 'master\|develop' | xargs git branch -D"
-  alias git=hub
+ # alias git=hub
   alias mdiff="git di | mate"
   alias dim="sips -g pixelWidth -g pixelHeight"
   alias e="subl -n ."
@@ -65,3 +66,5 @@ eval "$(rbenv init -)"
 
 ### Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
+export PATH=$PATH:/usr/local/Cellar/go/1.2.1/libexec/bin
+export GOPATH=/Users/akshayrawat/clerky/go

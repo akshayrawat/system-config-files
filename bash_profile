@@ -66,5 +66,6 @@ eval "$(rbenv init -)"
 
 ### Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
-export PATH=$PATH:/usr/local/Cellar/go/1.2.1/libexec/bin
-export GOPATH=/Users/akshayrawat/clerky/go
+export GOPATH=/Users/akshayrawat/clerky/go/vendor:/Users/akshayrawat/clerky/go/apps
+export PATH=$PATH:/Users/akshayrawat/clerky/go/vendor/bin:/Users/akshayrawat/clerky/go/apps/bin
+export PYTHONPATH=/Library/Python/2.6/site-packages

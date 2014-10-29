@@ -21,6 +21,7 @@ function system_command_aliases
   alias ln='ln -s'
   alias rf='rm -rf'
   alias sniff_lo='sudo tcpdump -i lo0 -A'
+  alias bo='EDITOR=mate bundle open '
 }
 
 function package_aliases

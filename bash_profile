@@ -1,7 +1,14 @@
 function bash_settings
 {
-  . `brew --prefix`/etc/bash_completion
-  export PATH=$HOME/.rbenv/bin:/usr/local/bin:/usr/local/share/npm/bin/:/Users/akshayrawat/play-2.2.1:$PATH
+  if [ -f $(brew --prefix)/etc/bash_completion ]; then
+    source $(brew --prefix)/etc/bash_completion
+  fi
+
+  source $(brew --prefix)/etc/bash_completion.d/git-prompt.sh
+
+
+  export PATH=/usr/local/bin:$PATH
+  export PATH=$HOME/.rbenv/bin:/usr/local/share/npm/bin/:/Users/akshayrawat/play-2.2.1:$PATH
   export PS1='\w$ '
   export PS1='\w$(__git_ps1 "(%s)")$ '
   export EDITOR="vim"

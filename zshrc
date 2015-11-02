@@ -12,6 +12,10 @@ eval "$(rbenv init -)"
 export EDITOR=/usr/bin/vim
 export VISUAL=/usr/bin/vim
 
+# Key bindings
+bindkey '^R' history-incremental-search-backward
+bindkey '^F' history-incremental-search-forward
+
 # Aliases
 
 ## System

@@ -9,6 +9,7 @@
 [format]
   pretty = %Cblue%h%Creset %Cgreen[%ar]%Creset (%an) %s
 [alias]
+  ac = !git add -A && git commit -m
   ci = commit -m
   st = status -sb
   di = diff
@@ -22,7 +23,7 @@
   out = log origin..HEAD
   ci = commit
   lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
-	as = "!f(){ git reset --soft HEAD~$1 && git commit ${2:+-m \"$2\"}; };f"
+  as = "!f(){ git reset --soft HEAD~$1 && git commit ${2:+-m \"$2\"}; };f"
 [user]
 	name = Akshay Rawat
 	email = projects@akshay.cc
@@ -30,9 +31,5 @@
     mergeoptions = --no-ff
 [branch "develop"]
     mergeoptions = --no-ff
-[difftool "sourcetree"]
-	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
-	path = 
-[mergetool "sourcetree"]
-	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
-	trustExitCode = true
+[github]
+	user = akshayrawat

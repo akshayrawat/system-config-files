@@ -16,7 +16,10 @@ export VISUAL=/usr/bin/vim
 bindkey '^R' history-incremental-search-backward
 bindkey '^F' history-incremental-search-forward
 
-# Aliases
+# Misc PATHs
+export GOPATH=/Users/akshayrawat/clerky/go/vendor:/Users/akshayrawat/clerky/go/apps
+
+ #Aliases
 
 ## System
 alias rm='rm' # Override the default rm -i
